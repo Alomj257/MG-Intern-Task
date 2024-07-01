@@ -1,9 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+        .header {
+                 background-color: aquamarine;
+                 display: grid;
+                 grid-template-columns: repeat(3,1fr);
+                 padding: opx 25px;
+                 height: 150px;
+                 align-items: center;
+               
+        }
+        .logo img{
+            height: 150px;
+        }
+        .search input{
+            height: 5px;
+            width: 120%;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            padding: 20px;
+            font-size: 15px;
+        }
+        .icons{
+            text-align: right;
+        }
+        .icons.fa{
+            color: white;
+            text-decoration: none;
+            font-size: 80px;
+            padding: 0px 50px;
+            transition: 0.6s;
+            
+        }
+        .fa:hover{
+            color:white;
+        }
+        .links{
+            background-color: aquamarine;
+            display: none;
+            
+        }
+        .links a{
+            color :rgb(4, 9, 63);
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            font-size: 18px;
+
+        }
+        .showmylinks{
+            display: block;
+        }
+        @media only screen and (max-width: 600px){
+            .header{
+                grid-template-columns: auto auto;
+                padding: 10px 5px;
+                height:auto;
+            }
+            .logo img{
+                width: 90px; ;
+                height: auto;
+            }
+            .search{
+                grid-column: 2;
+                grid-row: 2;
+                grid-column: 1/span 2;
+                padding-top:10px ;
+            }
+            .icons .fa{
+                padding : 5px;
+            }
+            .search input {
+                width: 80%;
+            }
+        }
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar </title>
+    <title>Navbar </title>
 </head>
 <body>
     <div class = "header">
@@ -16,10 +101,10 @@
             </form>
         </div>
         <div class = "icons">
-            <a href="#"></a>  
-            <a href="#"></a>  
-            <a href="#"></a>  
-            <a href="#"></a>  
+            <a href="#" class="fa fa-user"></a>  
+            <a href="#" class="	fa fa-user"></a>  
+            <a href="#" class="	fa fa-heart"></a>  
+            <a href="#" class="	fa fa-bars"></a>  
         </div>
     </div>   
      <div class ="links">
@@ -30,7 +115,11 @@
         <a href="#">Grocery</a>  
         <a href="#">Electronics</a>  
      </div>
+     <script>
+        document.getElementsByClassName("fa")[3].addEventListener("click", function(){
+            document.getElementsByClassName("links")[0].classList.toggle("showmylinks");
+        });
 
-    
+    </script>
 </body>
 </html>
