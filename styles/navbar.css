@@ -1,11 +1,20 @@
 body{
     margin: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 80px;
 }
 
 .navbar{
     width: 100%;
     height: 5rem;
-    background-color: rgb(25, 22, 91);
+    background-color: #190482;
     display: flex;
     justify-content: space-around;
 }
@@ -17,6 +26,11 @@ body{
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+}
+
+a:active{
+    /* font-size: 105%; */
+    text-decoration: underline;
 }
 
 .ham-links{
@@ -99,6 +113,11 @@ img{
     margin-top: -30%;
     /* background-color: aqua; */
     filter: drop-shadow();
+}
+
+li:hover{
+    font-size: 105%;
+    transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 700px) {
