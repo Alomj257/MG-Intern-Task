@@ -1,0 +1,178 @@
+body{
+    display: flex;
+}
+
+.text-side{
+    width: 100%;
+}
+.image-side{
+    width: 100%;
+    background-color: rgb(237, 233, 233);
+    padding: 2%;
+    margin-top: -10px;
+}
+.image-side .cross img{
+    height: 1.2rem;
+}
+.image-side .cross{
+    display: flex;
+    justify-content: flex-end;
+}
+.image-side .big-image img{
+    height: 32rem;
+}
+.image-side .big-image{
+    display: flex;
+    justify-content: center;
+}
+
+.image-side .side-images{
+    display: flex;
+    margin-top: 20px;
+}
+
+.image-side .side-images img{
+    height: 8rem;
+    margin-left: 20px;
+    background-color:rgb(186, 185, 185) ;
+    border-radius: 20px;
+}
+
+
+/* text side --------------------------------------------------- */
+
+.text-side{
+    padding: 2%;
+}
+.text-side h2{
+    width: 80%;
+}
+.text-side .price{
+    font-size: xx-large;
+    font-weight:bold;
+    color:rgb(0, 123, 255) ;
+}
+.head{
+    font-size: 20px;
+}
+.colour-cont img{
+    height: 1.5rem;
+}
+.color,.color1,.color2,.color3,.color4{
+    border-radius: 5000px;
+    border:2px solid white;
+    padding: 2px;
+    cursor: pointer;
+}
+.glow{
+    border: 2px solid blue !important;
+}
+
+.size-option{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.size,.size1{
+    background-color:rgb(237, 233, 233);
+    width: 40%;
+    padding: 3%;
+    border-radius: 15px;
+    border:2px solid white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.size:hover,.size1:hover{
+    box-shadow: 1px 1px 10px ;
+}
+.big{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: large;
+}
+.grey{
+    margin-top: 10px;
+    font-size: large;
+    margin-bottom: 0;
+    color: rgb(92, 91, 91);
+}
+
+.wrapper{
+    height: 4.5rem;
+    width: 40%;
+    font-size: 25px;
+    display: flex;
+    
+}
+.wrapper span{
+    height: 2rem;
+    text-align: center;
+    border: 0.1px solid grey;
+    padding: 9px;
+    width: 45px;
+}
+.wrapper .minus{
+    border-top-left-radius:50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    color: rgb(0, 123, 255);
+    font-weight: bolder;
+    /* padding-left: 23px; */
+}
+
+.wrapper .number{
+    border-left: 0.1px solid grey;
+    border-right: 0.1px solid grey;
+}
+
+.wrapper .plus{
+    border-top-right-radius:50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    color: rgb(0, 123, 255);
+    font-weight: bolder;
+    /* padding-right: 23px; */
+}
+
+.buttons .add{
+    width: 45%;
+    padding: 2.5%;
+    border: none;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+.buttons .add:hover{
+    box-shadow: 1px 1px 10px rgb(0, 123, 255);
+}
+
+.buttons .ord{
+    margin-left: 20px;
+    width: 45%;
+    padding: 2.5%;
+    border: 1px solid rgb(0, 123, 255);
+    background-color: white;
+    color: rgb(0, 123, 255);
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+.buttons .ord:hover{
+    box-shadow: 1px 1px 10px ;
+}
+
+.extras{
+    color: rgb(0, 123, 255);
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.extras svg{
+    margin-top: 16px;
+    margin-right: 3px;
+}
+.others{
+    display: flex;
+}
