@@ -1,0 +1,340 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+    height: 4rem;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.ham{
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+.ham span{
+    height: 5px;
+    width: 100%;
+    background-color:black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-100%,200%);
+    transform: translate(-50%,-50%);
+    transition: 0.3s ease-in-out;
+}
+.ham span:nth-child(1){
+    top: 25%;
+    }
+    .ham span:nth-child(3){
+        top: 75%;
+    }
+
+.first{
+    background-image: url("./public/back1.jpg");
+    height: 100vh;
+    display: flex;
+    color: white;
+}
+.first .image img{
+    height: 110vh;
+    overflow-x:auto;
+}
+
+.text{
+    width: 40%;
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.top{
+    font-size: 28px;
+}
+h2{
+    font-size: 50px;
+}
+.bot{
+    font-size: 28px;
+}
+.first button{
+    height: 4rem;
+    width: 15rem;
+    border-radius: 25px;
+    border: none;
+}
+
+.second{
+    height: 40rem;
+    background-color: #23445b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.left{
+    width: 35%;
+    margin-left: 5%;
+}
+.right{
+    width: 35%;
+    margin-left: 5%;
+}
+.box-head{
+    margin-top: -30%;
+    font-size:xx-large;
+}
+.box-li{
+    margin-top: 10%;
+}
+.box-li h3{
+    font-size: x-large;
+}
+.box-li p{
+    font-size: larger;
+}
+
+
+.third{
+    height: 35rem;
+    /* background-color: aqua; */
+    /* background: radial-gradient(circle,#23445b);
+    background: radial-gradient(ellipse farthest-side at top, #23445b 10%, #eee 100%); */
+}
+.info-head{
+    text-align: center;
+}
+.info-head .one{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.container{
+    width: 80%;
+    padding-left: 10%;
+    /* background-color:aliceblue; */
+    height: 25rem;
+    display: flex;
+    justify-content: space-around;
+}
+.info-box{
+    background-color:#e0e5eb;
+    height: 20rem;
+    width: 18%;
+    padding: 30px;
+}
+.info-number{
+    color: white;
+    background-color: #23445b;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    /* margin-left: 30px; */
+    text-align:center;
+    align-content: center;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.info-header{
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+.info-box a{
+    color: black;
+}
+
+.fourth{
+    height: 55rem;
+    background-color: #23445b;
+}
+
+.team-cards{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.team-card{
+    padding: 2%;
+    height: 17rem;
+    width: 35%;
+    background-color: white;
+    display: flex;
+    margin-left: 3%;
+    border-radius: 20px;
+}
+
+.team-card img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.team-card-text{
+    padding-left: 5%;
+}
+
+.t-c-top{
+    color: grey;
+}
+
+.t-c-name{
+    font-size: 25px;
+}
+.team-social{
+    margin-top: 30px;
+}
+.team-social .far{
+    margin-left: 30px;
+}
+
+.fifth{
+    height: 25rem;
+    align-content: center;
+}
+.fifth button{
+    height: 4rem;
+    width: 14rem;
+    border-radius: 25px;
+    border: 2px solid #23445b;
+}
+.f-des{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.sixth{
+    height: 59rem;
+    background-image: url("./public/back2.jpg");
+    background-size:110%;
+    background-position-x: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sixth-info{
+    width: 40%;
+    text-align: center;
+}
+.s-tag{
+    font-size: 60px;
+}
+.s-des{
+    font-size: 20px;
+}
+.sixth-info button{
+    height: 4rem;
+    width: 14rem;
+    border-radius: 25px;
+    border: 2px solid #23445b;
+    margin-top: 50px;
+}
+
+.seventh{
+    height: 60rem;
+    text-align: center;
+    padding: 20px;
+}
+.se-tag{
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+.se-des{
+    font-size: 28px;
+}
+.seventh img{
+    height: 30rem;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.cards-cont{
+    display: flex;
+    justify-content: center;
+}
+.achivments{
+    background-color: #f2f2f2;
+    color: #305658;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 15rem;
+    width: 13rem;
+    text-align: center;
+    align-content: center;
+    margin-top: -50px;
+    border-radius: 20px;
+}
+.achivments .a-text{
+    margin-top: 50px;
+    font-size: 20px;
+}
+.achivments .a-num{
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.eighth{
+    height: 25rem;
+}
+.contact{
+    display: flex;
+    justify-content:center;
+    margin-top: 100px;
+}
+.chat{
+    width: 20%;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.chat input{
+    width: 70%;
+    /* height: 0.1rem; */
+    border-radius: 15px;
+    padding: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: #e0e5eb;
+    margin-top: 10px;
+}
+.chat button{
+    height: 3.5rem;
+    width: 92.5%;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color:#25797c;
+    font-size: 20px;
+    color: white;
+}
+.chat img{
+    height: 5rem;
+}
+.chat .e-head{
+    font-size: 25px;
+}
+.chat .e-des{
+    font-size: 20px;
+}
+
+footer{
+    background-color: #23445b;
+    height: 10rem;
+    text-align: center;
+}
+.foot{
+    padding: 50px;
+    color: white;
+}
